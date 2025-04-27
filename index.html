@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sitemap Generator - Ngerank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Sitemap Generator</h1>
+        <label for="urlInput">Paste Your URLs (one per line):</label>
+        <textarea id="urlInput" rows="10" placeholder="https://example.com/page1\nhttps://example.com/page2"></textarea>
+        <button onclick="generateSitemap()">Generate Sitemap</button>
+
+        <div class="output" id="outputSection" style="display:none;">
+            <h2>Result:</h2>
+            <textarea id="sitemapOutput" rows="10" readonly></textarea>
+            <button onclick="copySitemap()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <footer style="text-align:center; margin-top:2rem; font-size:0.9rem;">
+        Built by <a href="https://ngerank.id" target="_blank" style="color:#FFD166; text-decoration:none;">Ngerank</a> — Built to Rank.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
